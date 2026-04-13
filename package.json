@@ -1,0 +1,15 @@
+{
+  "name": "niti-setu-root",
+  "version": "1.0.0",
+  "description": "Root manager for Niti-Setu client and server",
+  "private": true,
+  "scripts": {
+    "start:client": "npm start --prefix client",
+    "start:server": "npm start --prefix server",
+    "ingest": "npm run ingest --prefix server",
+    "dev": "concurrently \"npm run start:server\" \"npm start --prefix client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
